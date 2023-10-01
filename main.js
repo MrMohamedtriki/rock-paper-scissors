@@ -245,7 +245,7 @@ if (scoreme===5) {
   playWinSound();
   setTimeout(function () {
   winnerMessage.style.display = 'none';
-  }, 3000); // 3000 milliseconds = 3 seconds
+  }, 3000); 
   scoreme = 0;
   scorecomputer = 0;
   tied = 0;
@@ -256,7 +256,7 @@ loserMessage.style.display = 'block';
 playLoseSound();
 setTimeout(function () {
 loserMessage.style.display = 'none';
-}, 3000); // 3000 milliseconds = 3 seconds
+}, 3000); 
 scoreme = 0;
 scorecomputer = 0;
 tied = 0;
