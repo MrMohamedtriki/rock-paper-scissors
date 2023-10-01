@@ -5,58 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1>Game of rock paper scissor</h1>
+    <link rel="stylesheet" href="styles.css">
+<script  src="main.js" defer></script>
 </head>
-<body>
-<button onclick="game()">to begin the game please click here </button>
+
 <audio id="winSound" src="win.mp3"></audio>
 <audio id="loseSound" src="lose.mp3"></audio>
-<h2 id="demo1">My score  : </h2><br>
-<h2 id="demo2">Computer score  : </h2>
-<style>
-    button {
-        background-color: #0074e4;
-        color: #fff;
-        padding: 10px 20px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+<body>
+    <div class="divi">
+        <h1 class="one">
+        </h1>
+    </div>
 
-    button:hover {
-        background-color: #0051a8;
-    }
-  
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #cdedf6f4;
-        
-        text-align: center;
-        }
-        
-    h1 {
-        color: #333;
-       }
+    <div class="winner-message">
+        <div class="message">YOU WIN !!!</div>
+      </div>
+      <div class="loser-message">
+        <div class="message">YOU LOSE !!!</div>
+      </div>
+      
 
-    h2 {
-        font-size: 24px;
-        margin-top: 20px;
-        color: #555;
-       }  
 
-    #demo1, #demo2 {
-        font-size: 18px;
-        margin-top: 10px;
-        color: #777;
-                   }
 
-       
-    </style>
 
-    <script  src="2.js" defer></script>
+    <div class="winner">
+        <h1 class="who_win">
+        </h1>
+    </div>
 
+<div class="div_score" id="div_score">
+    <h2 class="mychoice"></h2>
     
-        
+    <h1 class="h1_score"></h1>
+    <div class="images_my"></div>
+</div>
+<div class="computer_score">
+        <h2 class="computerchoice">
+        </h2>
+    <h1 class="demo1"></h1>
+    <div class="images_my"></div>
+</div>
+<div class="t_ties"> 
+    <h1 class="ties"></h1>
+</div>
+<center>
+    <button class="reset" onclick="restart_game()">Play again </button>
+</center>
+<h3 class="playerchoice"></h3>
 </body>
 </html>

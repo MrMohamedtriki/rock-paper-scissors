@@ -1,0 +1,84 @@
+button {
+    background-color: #0074e4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0051a8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdedf6f4;
+    
+    text-align: center;
+    }
+    
+h1 {
+    color: #333;
+   }
+h1.one{
+    color: #eb1010;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555;
+   }  
+
+#demo1, #demo2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #777;
+               }
+
+
+.pimg:hover {
+    border: 2px solid #007BFF; 
+    box-shadow: 0px 0px 10px #007BFF; 
+}
+/* CSS for the winner message */
+.winner-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .message {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff0000; /* Red color for emphasis */
+    animation: scaleUp 2s ease-in-out forwards;
+  }
+  .loser-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

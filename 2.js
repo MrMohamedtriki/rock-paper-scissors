@@ -121,5 +121,28 @@ function playRound() {
     }
 
 
+    ---------------------------------------------------
+      if(document.getElementById("my_chose").value > document.getElementById("comp_choice").value){
+    alert("YOU WIn !!!!!");
+    //playWinSound();
+    scoreme=scoreme+1;
     
+
+}
+if(document.getElementById("my_chose").value < document.getElementById("comp_choice").value){
+    alert("YOU LOSE !!!!!");
+    playLoseSound();
+    scorecomputer=scorecomputer+1;
+    
+
+}
+if(document.getElementById("my_chose").value === document.getElementById("comp_choice").value){
+   alert("!!! tied !!!");
+    //alert(document.getElementById("my_chose").value );
+    //alert(document.getElementById("comp_choice").value );
+
+
+}
+alert("mon score est "+scoreme);
+alert("le score de machinne est "+scorecomputer);
   
